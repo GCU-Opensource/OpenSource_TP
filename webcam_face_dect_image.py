@@ -8,7 +8,7 @@ import numpy as np
 webcam = cv2.VideoCapture(0)
 
 #classifier
-xml = 'haarcascade_frontalface_default.xml'
+xml = 'haarcascades/haarcascade_frontalface_default.xml'
 faceCascade = cv2.CascadeClassifier(xml)
 
 #video caputure setting
@@ -16,7 +16,7 @@ capture = cv2.VideoCapture(0) # initialize, # is camera number
 capture.set(cv2.CAP_PROP_FRAME_WIDTH,1280) #CAP_PROP_FRAME_WIDTH == 3
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT,1000) #CAP_PROP_FRAME_HEIGHT == 4
 
-find_num = 0    
+find_num = 0
 captured_num = 0
     
 # loop through frames
