@@ -1,3 +1,5 @@
+# 참고: https://velog.io/@jjaa9292/OpenCVProject-1.-%EB%A7%88%EC%8A%A4%ED%81%AC-%EC%B0%A9%EC%9A%A9%EC%97%AC%EB%B6%80-%ED%99%95%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0#14-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A0%80%EC%9E%A5
+
 import cv2
 import cvlib as cv
 import numpy as np
