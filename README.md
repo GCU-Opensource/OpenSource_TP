@@ -58,6 +58,7 @@ pip install -r requirements.txt
 
 ## Usage
 
+### For mask detection model
 ```bash
 # for training 
 python train.py
@@ -67,6 +68,25 @@ python demo.py
 
 # for accuracy evaluation
 python test.py
+```
+
+### For webcam face detection
+```bash
+python webcam_face_dect_image.py
+
+# Press key 'c' for screen shot
+# Press key 'q' to quit
+```
+
+### For smile detection
+```bash
+cd smile_detection
+
+# for image
+python smile_detector_image.py
+
+# for webcam
+python smile_detector_cam.py
 ```
 
 ## Reference
