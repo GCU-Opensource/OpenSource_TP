@@ -80,6 +80,8 @@ python webcam_face_dect_image.py
 
 ### For smile detection
 ```bash
+mkdir face
+
 cd smile_detection
 
 # for image
