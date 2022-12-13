@@ -40,7 +40,7 @@ while(True):
             captured_num = captured_num + 1
             found_faces_img = frame[startY:endY, startX:endX, :]
             if cv2.waitKey(1) == ord('c'):
-                cv2.imwrite('./face/face'+str(captured_num)+'.jpg', frame) # 인식한 얼굴 사진 저장
+                cv2.imwrite('./face/capture_img'+'.jpg', frame) # 인식한 얼굴 사진 저장
                 # cv2.imwrite('./face/face'+str(captured_num)+'.jpg', found_faces_img) # 인식한 얼굴 사진 저장
  
 #    frame = cv2.flip(frame, 1) # 좌우 대칭
