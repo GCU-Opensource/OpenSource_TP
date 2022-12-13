@@ -104,4 +104,6 @@ python smile_detector_cam.py
 
 * [https://velog.io/@jjaa9292/OpenCVProject-1.-%EB%A7%88%EC%8A%A4%ED%81%AC-%EC%B0%A9%EC%9A%A9%EC%97%AC%EB%B6%80-%ED%99%95%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0](https://velog.io/@jjaa9292/OpenCVProject-1.-%EB%A7%88%EC%8A%A4%ED%81%AC-%EC%B0%A9%EC%9A%A9%EC%97%AC%EB%B6%80-%ED%99%95%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
+### Slack Messaging
+* [https://wooiljeong.github.io/python/slack-bot/](https://wooiljeong.github.io/python/slack-bot/)
 
