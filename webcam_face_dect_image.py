@@ -28,17 +28,20 @@ while(True):
     
     # 이미지 내 얼굴 검출
     found_face, confidence = cv.detect_face(frame)
-    
+
     # loop through detected faces
     for idx, f in enumerate(found_face):
         
         (startX, startY) = f[0], f[1]
         (endX, endY) = f[2], f[3]
- 
+
+        # 얼굴 감지해서 자동으로 사진 저장
         if find_num % 8  == 0:
             captured_num = captured_num + 1
             found_faces_img = frame[startY:endY, startX:endX, :]
-            cv2.imwrite('./face/face'+str(captured_num)+'.jpg', found_faces_img) # 인식한 얼굴 사진 저장
+            if cv2.waitKey(1) == ord('c'):
+                cv2.imwrite('./face/face'+str(captured_num)+'.jpg', frame) # 인식한 얼굴 사진 저장
+                # cv2.imwrite('./face/face'+str(captured_num)+'.jpg', found_faces_img) # 인식한 얼굴 사진 저장
  
 #    frame = cv2.flip(frame, 1) # 좌우 대칭
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -50,10 +53,14 @@ while(True):
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
 
     # display output
-    cv2.imshow('webcam', frame)     
-    
+    cv2.imshow('webcam', frame)
+
     # press button to stop
-    if cv2.waitKey(1) > 0 : break
+    # if cv2.waitKey(1) > 0: break
+
+    # press 'q' button to stop
+    if cv2.waitKey(1) == ord('q'):
+        break
     
 # release resources
 webcam.release()
