@@ -6,6 +6,7 @@ Implementation: cv2
 import cv2
 
 # Size of Image
+
 width = 400
 height = 300
 
